@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "startup.sh",
+      "use": "@now/static-build"
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/nacos/$1" }]
+}
